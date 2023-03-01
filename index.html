@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Itim&display=swap" rel="stylesheet"> 
 	<title>FIGMA | Макеты для верстки — Верстка страницы</title>
 	<meta name="description" content="Макет для верстки сайта был взял с телеграм канала FIGMA | Макеты для верстки">
     <link rel="stylesheet" href="css/base.css">
@@ -25,7 +28,398 @@
     <!-- Конец -->
 
     <div class="main">
-        В данном блоке размещается верстка
+
+        <header class="header">
+            <div class="header__wrapper">
+                <img src="./img/header_logo.svg" alt="icon" class="header__logo">
+                <nav class="header__navbar">
+                    <a href="#" class="header__navbar-link">Home</a>
+                    <a href="#" class="header__navbar-link">Courses</a>
+                    <a href="#" class="header__navbar-link">Webinar</a>
+                    <a href="#" class="header__navbar-link">Pricing</a>
+                </nav>
+                <div class="language-picker">
+                    <span class="language-picker-span">Eng</span>
+                    <img src="./img/language-picker-icon.svg" alt="icon" class="language-picker-icon">
+                </div>
+                <button class="header__login-btn">Login</button>
+            </div>
+        </header>
+
+        <div class="main__container">
+
+            <section class="intro">
+                <div class="intro__wrapper">
+                    <h1 class="intro__title">
+                        Grow Your Skills To Advance Your Career Path.
+                    </h1>
+                    <p class="intro__text">
+                        We have something big for you who want to level up!
+                    </p>
+                    <form action="" class="intro__question-form">
+                        <input type="text" class="question-form-input" placeholder="What do you want to learn...">
+                        <img src="./img/question-form_magnifying-glass.svg" alt="icon" class="question-form_magnifying-glass">
+                    </form>
+                    <div class="intro__suggestions">
+                        <p class="suggestions__heading">Suggestions</p>
+                        <div class="suggestions__buttons">
+                            <button class="suggestions__button ui-ux-design">
+                                UI UX Design
+                            </button>
+                            <button class="suggestions__button fundamental">
+                                CSS Fundamental
+                            </button>
+                            <button class="suggestions__button design-illustration">
+                                3D Design Illustration
+                            </button>
+                            <button class="suggestions__button development">
+                                Website Development
+                            </button>
+                            <button class="suggestions__button logo-design">
+                                Logo Design
+                            </button>
+                            <button class="suggestions__button icon-design">
+                                Icon Design
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <img src="./img/intro_students.svg" alt="img" class="intro__students">
+            </section>
+
+            <section class="benefits">
+                <div class="benefits__wrapper">
+                    <div class="benefits__wrapper-item">
+                        <img src="./img/item_icon-friends.svg" alt="icon" class="item__icon">
+                        <div class="item__info">
+                            <p class="item__info-heading">Get New Friends</p>
+                            <p class="item__info-text">
+                                You will meet new friends in some of classes that you take. Say hello to them and make friends, it will be so much warm friendship!
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="benefits__wrapper-item">
+                        <img src="./img/item_icon-mentor.svg" alt="icon" class="item__icon">
+                        <div class="item__info">
+                            <p class="item__info-heading">Expert and Fun Mentor</p>
+                            <p class="item__info-text">
+                                Learn with earnest and don’t forget to get relax too. Learn and enjoy the materials or classes with our expert mentors.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="benefits__wrapper-item">
+                        <img src="./img/item_icon-access.svg" alt="icon" class="item__icon">
+                        <div class="item__info">
+                            <p class="item__info-heading">Flexible Access</p>
+                            <p class="item__info-text">
+                                You can access materials or classes easily by our website also mobile. Access it everywhere and everytime, no limit for you to learn!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="classes">
+                <h2 class="classes__title">What Do You Want to Learn?</h2>
+                <p class="classes__text">
+                    Choose the right class as you need. Then enjoy studying.
+                </p>
+                <div class="classes__cards">
+                    <div class="classes__card">
+                        <div class="classes__card-wrapper">
+                            <img src="./img/classes_card-pic-technology.svg" alt="img" class="classes__card-pic">
+                            <button class="card-pic-btn">12 Videos</button>
+                            <p class="classes__card-area">Technology</p>
+                            <p class="classes__card-heading">Digital Marketing Strategy</p>
+                            <p class="classes__card-text">
+                                This course aims to give you deeper understanding of core processes ...
+                            </p>
+                            <img src="./img/classes_card-line.svg" alt="img" class="classes__card-line">
+                            <div class="classes__card-mentor">
+                                <img src="./img/mentor_photo-Joey.svg" alt="img" class="mentor__photo">
+                                <div class="mentor__bio">
+                                    <p class="mantor__name">Joey Piere</p>
+                                    <p class="mentor__position">Mentor</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <button class="classes__card-btn">Access Class</button> -->
+                    </div>
+
+                    <div class="classes__card">
+                        <div class="classes__card-wrapper">
+                            <img src="./img/classes_card-pic-design.svg" alt="img" class="classes__card-pic">
+                            <button class="card-pic-btn">7 Videos</button>
+                            <p class="classes__card-area">Design</p>
+                            <p class="classes__card-heading">Figma Fundamental</p>
+                            <p class="classes__card-text">
+                                These lessons and exercises will help you start designing with Figma ...
+                            </p>
+                            <img src="./img/classes_card-line.svg" alt="img" class="classes__card-line">
+                            <div class="classes__card-mentor">
+                                <img src="./img/mentor_photo_araya.svg" alt="img" class="mentor__photo">
+                                <div class="mentor__bio">
+                                    <p class="mantor__name">Araya Sheila</p>
+                                    <p class="mentor__position">Mentor</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <button class="classes__card-btn">Access Class</button> -->
+                    </div>
+
+                    <div class="classes__card">
+                        <div class="classes__card-wrapper">
+                            <img src="./img/classes_card-pic-coding.svg" alt="img" class="classes__card-pic">
+                            <button class="card-pic-btn">10 Videos</button>
+                            <p class="classes__card-area">Coding</p>
+                            <p class="classes__card-heading">HTML Fundamental</p>
+                            <p class="classes__card-text">
+                                Well organized and easy to make you understand tutorials with lots of ...
+                            </p>
+                            <img src="./img/classes_card-line.svg" alt="img" class="classes__card-line">
+                            <div class="classes__card-mentor">
+                                <img src="./img/mentor_photo-elisa.svg" alt="img" class="mentor__photo">
+                                <div class="mentor__bio">
+                                    <p class="mantor__name">Ellisa Ruth</p>
+                                    <p class="mentor__position">Mentor</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <button class="classes__card-btn">Access Class</button> -->
+                    </div>
+
+                    <div class="classes__card">
+                        <div class="classes__card-wrapper">
+                            <img src="./img/classes_card-pic-coding-android.svg" alt="img" class="classes__card-pic">
+                            <button class="card-pic-btn">16 Videos</button>
+                            <p class="classes__card-area">Coding</p>
+                            <p class="classes__card-heading">Android App Development</p>
+                            <p class="classes__card-text">
+                                Take your Android coding skills to the next level, advanced Android app ...
+                            </p>
+                            <img src="./img/classes_card-line.svg" alt="img" class="classes__card-line">
+                            <div class="classes__card-mentor">
+                                <img src="./img/mentor_photo-wendy.svg" alt="img" class="mentor__photo">
+                                <div class="mentor__bio">
+                                    <p class="mantor__name">Wendy Troye</p>
+                                    <p class="mentor__position">Mentor</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <button class="classes__card-btn">Access Class</button> -->
+                    </div>
+                </div>
+                <button class="classes__button">Show All Classes</button>
+            </section>
+
+            <section class="webinar">
+                <h2 class="webinar__title">Live Online Webinar</h2>
+                <p class="webinar__text">
+                    You can stream Webinar live on our apps. Stay update on our Webinar, it’s Free!
+                </p>
+                <div class="webinar__wrapper">
+                    <img src="./img/webinar_video.svg" alt="img" class="webinar__video">
+                </div>
+                <div class="webinar__more-videos">
+                    <a href="#" class="webinar__link">See more webinar videos</a>
+                    <img src="./img/link-arrow.svg" alt="icon" class="link-arrow">
+                </div>
+            </section>
+
+            <section class="pricing">
+                <h2 class="pricing__title">Course Pricing</h2>
+                <p class="pricing__text">Choose pricing that suits to your need.</p>
+                <div class="pricing__cards">
+                    <div class="pricing__card free">
+                        <div class="pricing__card-wrapper">
+                            <div class="card__block_top">
+                                <img src="./img/card_icon-free.svg" alt="icon" class="card__icon">
+                                <div class="card__course-type">
+                                    <p class="course-type-name">Free</p>
+                                    <img src="./img/course-type-price-free.svg" alt="img" class="course-type-price">
+                                </div>
+                            </div>
+                            <img src="./img/card_line.svg" alt="icon" class="card__line">
+                            <ul class="card__course-options">
+                                <li class="card__course-option">
+                                    <img src="./img/course-option-bullet.svg" alt="icon" class="course-option-bullet">
+                                    Free e-book for every class
+                                </li>
+                                <li class="card__course-option">
+                                    <img src="./img/course-option-bullet.svg" alt="icon" class="course-option-bullet">
+                                    Materials update every day
+                                </li>
+                                <li class="card__course-option">
+                                    <img src="./img/course-option-bullet.svg" alt="icon" class="course-option-bullet">
+                                    Free download material videos
+                                </li>
+                                <li class="card__course-option">
+                                    <img src="./img/course-option-bullet.svg" alt="icon" class="course-option-bullet">
+                                    Unlock 5 material videos
+                                </li>
+                            </ul>
+                            <button class="card__button">Your Current Package</button>
+                        </div>
+                    </div>
+
+                    <div class="pricing__card express">
+                        <div class="pricing__card-wrapper">
+                            <div class="card__block_top">
+                                <img src="./img/card_icon-express.svg" alt="icon" class="card__icon">
+                                <div class="card__course-type">
+                                    <p class="course-type-name">Express</p>
+                                    <img src="./img/course-type-price-express.svg" alt="img" class="course-type-price">
+                                </div>
+                            </div>
+                            <img src="./img/card_line.svg" alt="icon" class="card__line">
+                            <ul class="card__course-options">
+                                <li class="card__course-option">
+                                    <img src="./img/course-option-bullet.svg" alt="icon" class="course-option-bullet">
+                                    Free e-book for every class
+                                </li>
+                                <li class="card__course-option">
+                                    <img src="./img/course-option-bullet.svg" alt="icon" class="course-option-bullet">
+                                    Materials update every day
+                                </li>
+                                <li class="card__course-option">
+                                    <img src="./img/course-option-bullet.svg" alt="icon" class="course-option-bullet">
+                                    Free download material videos
+                                </li>
+                                <li class="card__course-option">
+                                    <img src="./img/course-option-bullet.svg" alt="icon" class="course-option-bullet">
+                                    Meeting 2 times a week
+                                </li>
+                                <li class="card__course-option">
+                                    <img src="./img/course-option-bullet.svg" alt="icon" class="course-option-bullet">
+                                    Unlock 15 material videos
+                                </li>
+                            </ul>
+                            <button class="card__button">Buy Express</button>
+                        </div>
+                    </div>
+
+                    <div class="pricing__card premium">
+                        <img src="./img/pricing_card premium-label.svg" alt="icon" class="pricing_card-label">
+                        <div class="pricing__card-wrapper">
+                            <div class="card__block_top">
+                                <img src="./img/card_icon-premium.svg" alt="icon" class="card__icon">
+                                <div class="card__course-type">
+                                    <p class="course-type-name">Premium</p>
+                                    <img src="./img/course-type-price-premium.svg" alt="img" class="course-type-price">
+                                </div>
+                            </div>
+                            <img src="./img/card_line.svg" alt="icon" class="card__line">
+                            <ul class="card__course-options">
+                                <li class="card__course-option">
+                                    <img src="./img/course-option-bullet.svg" alt="icon" class="course-option-bullet">
+                                    Free e-book for every class
+                                </li>
+                                <li class="card__course-option">
+                                    <img src="./img/course-option-bullet.svg" alt="icon" class="course-option-bullet">
+                                    Materials update every day
+                                </li>
+                                <li class="card__course-option">
+                                    <img src="./img/course-option-bullet.svg" alt="icon" class="course-option-bullet">
+                                    Free download material videos
+                                </li>
+                                <li class="card__course-option">
+                                    <img src="./img/course-option-bullet.svg" alt="icon" class="course-option-bullet">
+                                    Private chat with mentor
+                                </li>
+                                <li class="card__course-option">
+                                    <img src="./img/course-option-bullet.svg" alt="icon" class="course-option-bullet">
+                                    Meeting 3 times a week
+                                </li>
+                                <li class="card__course-option">
+                                    <img src="./img/course-option-bullet.svg" alt="icon" class="course-option-bullet">
+                                    Unlock up to 30 material videos
+                                </li>
+                                <li class="card__course-option">
+                                    <img src="./img/course-option-bullet.svg" alt="icon" class="course-option-bullet">
+                                    Unlimited saved class
+                                </li>
+                            </ul>
+                            <button class="card__button">Buy Premium</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="application">
+                <div class="application__container">
+                    <div class="application__wrapper">
+                        <h2 class="application__title">Get Our Apps, Now!</h2>
+                        <p class="application__text">
+                            Reach out our apps everywhere and everytime with Sinauw Mobile Application.
+                        </p>
+                        <div class="application__store-btns">
+                            <img src="./img/application_googlepay-icon.png" alt="icon" class="store-btn">
+                            <img src="./img/application_appstore-icon.png" alt="icon" class="store-btn">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <div class="footer__wrapper">
+                    <div class="footer__socials">
+                        <img src="./img/footer_logo.png" alt="icon" class="footer__logo">
+                        <p class="footer__socials-text">
+                            Any feedback or questions? Contact us on our social media
+                        </p>
+                        <div class="footer__socials-group">
+                            <img src="./img/footer_social-facebook-icon.svg" alt="icon" class="footer__social">
+                            <img src="./img/footer_social-twitter-icon.svg" alt="icon" class="footer__social">
+                            <img src="./img/footer_social-instagram-icon.svg" alt="icon" class="footer__social">
+                        </div>
+                    </div>
+
+                    <div class="footer__page-blocks">
+                        <div class="page-block">
+                            <p class="page-block-heading">Menu</p>
+                            <div class="page-block-links">
+                                <a href="#" class="page-block-link">Home</a>
+                                <a href="#" class="page-block-link">Courses</a>
+                                <a href="#" class="page-block-link">Webinar</a>
+                            </div>
+                        </div>
+
+                        <div class="page-block">
+                            <p class="page-block-heading">Services</p>
+                            <div class="page-block-links">
+                                <a href="#" class="page-block-link">Materials Update</a>
+                                <a href="#" class="page-block-link">Trusted Mentor</a>
+                                <a href="#" class="page-block-link">Free E-book</a>
+                                <a href="#" class="page-block-link">Meeting</a>
+                            </div>
+                        </div>
+
+                        <div class="page-block">
+                            <p class="page-block-heading">Further Information</p>
+                            <div class="page-block-links">
+                                <a href="#" class="page-block-link">Terms & Conditions</a>
+                                <a href="#" class="page-block-link">Privacy Policy</a>
+                            </div>
+                        </div>
+
+                        <div class="page-block">
+                            <p class="page-block-heading">Apps Download</p>
+                            <div class="page-block-links">
+                                <a href="#" class="page-block-link">Google Play Store</a>
+                                <a href="#" class="page-block-link">App Store</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer__copyright">
+                    Copyright &#169 2021 Sinauw. All Rights Reserved.
+                </p>
+            </footer>
+
+        </div>
+
     </div>
 
 </body>
