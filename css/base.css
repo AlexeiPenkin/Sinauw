@@ -299,14 +299,14 @@ body {
     color: rgba(255, 255, 255, 0.4);
     margin: 0 auto 84px;
 }
-.classes__cards {
+.cards {
     display: flex;
     justify-content: space-between;
     gap: 32px;
     height: 485px;
     margin: 0 auto 48px;
 }
-.classes__card {
+.card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -314,14 +314,17 @@ body {
     height: 412px;
     background: linear-gradient(180deg, #202246 -53.38%, rgba(40, 43, 87, 0.17) 100%);
     border-radius: 20px;
+    cursor: pointer;
+    z-index: 10;
+    transition: 0.5s;
 }
-.classes__card:hover {
+.card.technology {
     height: 485px;
 }
-.classes__card-wrapper {
+.card-wrapper {
     margin: 12px 12px 20px;
 }
-.classes__card-pic {
+.card-pic {
     border-radius: 10px;
     margin-bottom: 24px;
 }
@@ -339,32 +342,32 @@ body {
     line-height: 150%;
     color: #FFFFFF;
 }
-.classes__card-area {
+.card-area {
     font-weight: 500;
     font-size: 12px;
     line-height: 150%;
     color: #3BF5BD;
     margin: 0 223px 8px 0;
 }
-.classes__card-heading {
+.card-heading {
     font-weight: 600;
     font-size: 18px;
     line-height: 150%;
     color: rgba(255, 255, 255, 0.8);
     margin: 0 21px 12px 0;
 }
-.classes__card-text {
+.card-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 150%;
     color: rgba(255, 255, 255, 0.4);
     margin-bottom: 20px;
 }
-.classes__card-line {
+.card-line {
     width: 252px;
     margin-bottom: 19px;
 }
-.classes__card-mentor {
+.card-mentor {
     display: flex;
     gap: 15px;
     width: 252px;
@@ -387,10 +390,10 @@ body {
     line-height: 150%;
     color: rgba(255, 255, 255, 0.4);
 }
-.classes__card-btn {
+.card-btn {
     position: absolute;
-    top: 420px;
-    left: 61px;
+    left: 61.5px;
+    bottom: 24px;
     width: 155px;
     height: 41px;
     background: #F5443B;
@@ -399,9 +402,8 @@ body {
     font-size: 14px;
     line-height: 17px;
     color: #fff;
-    margin: 0 auto 24px;
 }
-.classes__card-btn:hover {
+.card-btn:hover {
     background: transparent;
     color: #F5443B;
     border: 1px solid #F5443B;
@@ -720,7 +722,7 @@ body {
 .footer__page-blocks {
     display: flex;
     justify-content: space-between;
-    gap: 81px;
+    gap: 80px;
     width: 845px;
     height: 204px;
 }
@@ -729,6 +731,8 @@ body {
     flex-direction: column;
 }
 .page-block-heading {
+    font-family: 'Inter';
+    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
@@ -741,11 +745,13 @@ body {
     gap: 20px;
 }
 .page-block-link {
+    font-family: 'Inter';
+    font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
-    color: rgba(255, 255, 255, 0.7);
-    opacity: 0.6;
+    color: rgba(255, 255, 255, 0.7);    font-size: 20px;
+    line-height: 24px;
 }
 .footer__copyright {
     width: 357px;
